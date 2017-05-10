@@ -1,0 +1,14 @@
+# Site settings
+title: City of Santa Monica
+email: data@smgov.net
+description: City of Santa Monica homepage on Jekyll
+baseurl: "" # the subpath
+url: "https://beta.smgov.net" # the base hostname & protocol
+twitter_username: santamonicacity
+github_username:  CityofSantaMonica
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
