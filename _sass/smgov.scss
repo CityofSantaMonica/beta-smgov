@@ -1,3 +1,26 @@
 @charset "utf-8";
 
+@import "bootstrap/scss/variables";
+@import "variables";
+
+.bg-gray {
+  background-color: $gray;
+}
+.bg-gray-dark {
+  background-color: $gray-dark;
+  color: $white;
+}
+.bg-gray-light {
+  background-color: $gray-light;
+}
+
+section,
+.section {
+  padding: $spacer 0;
+  .title {
+    @extend .text-uppercase;
+    border-bottom: solid 4px $gray-dark;
+  }
+}
+
 @import "bootstrap/scss/bootstrap";
