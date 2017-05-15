@@ -16,6 +16,11 @@
   background-color: $gray-light;
 }
 
+.site-header {
+  background-color: $white;
+  @extend .sticky-top;
+}
+
 section,
 .section {
   padding: $spacer 0;
@@ -23,4 +28,8 @@ section,
     @extend .text-uppercase;
     border-bottom: solid 4px $gray-dark;
   }
+}
+
+.site-footer {
+  @extend .bg-gray;
 }
