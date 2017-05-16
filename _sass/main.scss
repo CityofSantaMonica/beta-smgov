@@ -1,9 +1,6 @@
 @charset "utf-8";
 
-@import
-  "variables",
-  "bootstrap/scss/utilities"
-;
+@import "variables";
 
 .bg-gray {
   background-color: $gray;

@@ -1,7 +1,3 @@
-@import
-  "bootstrap/scss/variables"
-;
-
 $red: #da605f;
 
 $gray-dark: #3f3f3f;
@@ -9,3 +5,5 @@ $gray: #c8c9cd;
 $gray-light: #f0f0f0;
 
 $brand-primary: #2364a7;
+
+@import "bootstrap/scss/variables";
