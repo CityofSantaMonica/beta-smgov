@@ -1,5 +1,5 @@
-<nav class="navbar">
-  <a class="navbar-brand text-muted"
+<div class="navbar navbar-top" role="navigation">
+  <a class="navbar-brand"
      href="{{ "/" | relative_url }}">
     <img src="{{ site.baseurl }}/common/img/city-logo.png"
          width="60"
@@ -7,4 +7,21 @@
          alt="City of Santa Monica logo" />
     City of Santa Monica
   </a>
-</nav>
+  <ul class="navbar-nav">
+    {% for item in site.data.navbar %}
+    <li class="nav-item hidden-sm-down">
+      <a href="{{ item.url }}"
+         target="{{ item.target }}"
+         class="nav-link">
+          {{ item.text }}
+      </a>
+    </li>
+    {% endfor %}
+    <li class="nav-item">
+      <a href="#"
+         class="nav-link">
+         Search
+      </a>
+    </li>
+  </ul>
+</div>

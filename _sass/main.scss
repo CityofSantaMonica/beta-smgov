@@ -1,6 +1,9 @@
 @charset "utf-8";
 
-@import "variables";
+@import
+  "site-header",
+  "variables"
+;
 
 .bg-gray {
   background-color: $gray;
@@ -11,11 +14,6 @@
 }
 .bg-gray-light {
   background-color: $gray-light;
-}
-
-.site-header {
-  background-color: $white;
-  @extend .sticky-top;
 }
 
 section,

@@ -1,0 +1,24 @@
+@import
+  "bootstrap/scss/mixins/breakpoints",
+  "variables"
+;
+
+.site-header {
+  background-color: $white;
+  box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
+  @extend .sticky-top;
+
+  .navbar-top {
+    @extend .navbar-toggleable-sm;
+
+    .navbar-brand {
+      color: $gray-dark;
+    }
+
+    @include media-breakpoint-up(md) {
+      .navbar-nav {
+          margin-left: auto;
+      }
+    }
+  }
+}
