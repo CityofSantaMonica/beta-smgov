@@ -14,30 +14,30 @@ hassle. Jekyll recommends using Linux (e.g. Ubuntu) or OS X, and so do we.
 
 1. Clone the repo into a local directory
 
-  ```
-  $ git clone https://github.com/CityofSantaMonica/beta-smgov.git
-  $ cloning into 'beta-smgov'...
-  $ cd beta-smgov
-  ```
+   ```
+   $ git clone https://github.com/CityofSantaMonica/beta-smgov.git
+   $ cloning into 'beta-smgov'...
+   $ cd beta-smgov
+   ```
 
 1. Initialize the submodules
 
-  ```
-  $ git submodule update --init
-  ```
+   ```
+   $ git submodule update --init
+   ```
 
 1. Install gems and dependencies
 
-  ```
-  $ bundle install
-  ```
+   ```
+   $ bundle install
+   ```
 
 1. Build and launch the website at http://localhost:4000. This also sets up a
    watch to automatically rebuild on changes
 
-  ```
-  $ bundle exec jekyll serve
-  ```
+   ```
+   $ bundle exec jekyll serve
+   ```
 
 [1]: http://jekyllrb.com/
 [2]: http://bundler.io/
