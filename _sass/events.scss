@@ -1,0 +1,27 @@
+@import
+  "variables"
+;
+
+.event {
+  margin-bottom: 1rem;
+  margin-right: .5rem;
+  @extend .row;
+
+  .date {
+    @extend .col-2;
+    background-color: #f0f0f0;
+  }
+
+  .text {
+    @extend .col-10;
+    background-color: #f2dede;
+  }
+
+  div {
+      padding: 2rem;
+  }
+
+  .cancelled{
+    background-color: $red;
+  }
+}

@@ -13,3 +13,13 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+collections:
+   - events
+
+defaults:
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event
