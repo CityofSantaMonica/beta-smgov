@@ -1,0 +1,14 @@
+<input type="checkbox" id="nav-trigger" aria-hidden="true">
+
+<nav class="site-nav">
+  <ul>
+    {% for item in site.data.navbar %}
+    <li>
+      <a href="{{ item.url }}"
+         target="{{ item.target }}">
+          {{ item.text }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

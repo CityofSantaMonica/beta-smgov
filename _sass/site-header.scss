@@ -1,24 +1,55 @@
 @import
-  "bootstrap/scss/mixins/breakpoints",
+  "mixins",
   "variables"
 ;
 
 .site-header {
   background-color: $white;
-  box-shadow: 0 1px 2px 1px rgba(0,0,0,0.1);
-  @extend .sticky-top;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  @include boxshadow;
 
   .navbar-top {
+    @include height(70px, 75px);
     @extend .navbar-toggleable-sm;
 
-    .navbar-brand {
-      color: $gray-dark;
+    label[for="nav-trigger"] {
+      @include boxshadow;
+      background-color: $brand-primary;
+      color: $white;
+      text-align: center;
+      width: 3.6rem;
+      padding: 0.75rem;
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
     }
 
-    @include media-breakpoint-up(md) {
-      .navbar-nav {
-          margin-left: auto;
+    .navbar-brand {
+      margin-left: 3rem;
+      color: $gray-dark;
+      padding-top: 0;
+      > img {
+        @include height(55px, 70px);
+        margin-right: 5px;
       }
     }
+
+    .navbar-nav {
+      @include media-breakpoint-up(md) {
+        margin-left: auto;
+      }
+    }
+
   }
 }

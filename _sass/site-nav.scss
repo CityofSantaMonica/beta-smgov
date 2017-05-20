@@ -1,0 +1,31 @@
+@import
+  "variables"
+;
+
+#nav-trigger {
+  display: none;
+}
+
+.site-nav {
+  background-color: $gray-dark;
+  opacity: 0;
+
+  overflow-y: auto;
+
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  z-index: 0;
+
+  width: 265px;
+}
+
+#nav-trigger:checked ~ .site-nav {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+#nav-trigger:checked ~ #site {
+  left: 265px;
+  transition: left 0.2s;
+}

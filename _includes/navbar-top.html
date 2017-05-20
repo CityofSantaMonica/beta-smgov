@@ -1,15 +1,20 @@
 <div class="navbar navbar-top" role="navigation">
+  <label for="nav-trigger"
+         tabindex="0"
+         aria-label="Menu"
+         aria-controls="navigation"
+         aria-expended="false">
+     Menu
+  </label>
   <a class="navbar-brand"
      href="{{ "/" | relative_url }}">
     <img src="{{ site.baseurl }}/common/img/city-logo.png"
-         width="60"
-         height="60"
-         alt="City of Santa Monica logo" />
-    City of Santa Monica
+         alt="City of Santa Monica" />
+    {{ site.title }}
   </a>
-  <ul class="navbar-nav">
+  <ul class="navbar-nav hidden-sm-down">
     {% for item in site.data.navbar %}
-    <li class="nav-item hidden-sm-down">
+    <li class="nav-item">
       <a href="{{ item.url }}"
          target="{{ item.target }}"
          class="nav-link">

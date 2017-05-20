@@ -4,19 +4,24 @@
   {% include head.html %}
 
   <body>
-    <header class="site-header">
-      {% include navbar-top.html %}
-    </header>
 
-    <main class="site-content" aria-label="Content">
-      {{ content }}
-    </main>
+    {% include site-nav.html %}
 
-    <footer class="site-footer">
-      <div class="container">
-        {% include stay-connected.html %}
-      </div>
-    </footer>
+    <div id="site">
+      <header class="site-header">
+        {% include navbar-top.html %}
+      </header>
+
+      <main class="site-content" aria-label="Content">
+        {{ content }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          {% include stay-connected.html %}
+        </div>
+      </footer>
+    </div>
   </body>
 
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
