@@ -1,6 +1,7 @@
 sudo: false
 
 language: ruby
+cache: bundler
 rvm:
   - 2.3.3
 
@@ -9,12 +10,16 @@ before_install:
 
 script:
   - bash .travis/build.sh
+# before_deploy:
+#   - bash .travis/pre-deploy.sh
 
 after_success:
   - test $TRAVIS_PULL_REQUEST && ./.travis/pr_deploy
 after_failure:
   - test $TRAVIS_PULL_REQUEST && ./.travis/pr_status error "Website failed to build"
 
+# deploy:
+#   provider: azure_web_apps
 env:
   global:
     - GITHUB_AUTH_USER=allejo
