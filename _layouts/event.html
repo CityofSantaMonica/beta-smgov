@@ -1,4 +1,8 @@
-<div class="event">
+{% if page.cancelled %}
+<div class="event cancelled">
+{% else %}
+ <div class="event">
+{% endif %}
   <div class="date">{{ page.date | date: "%b" }}<br/>{{ page.date | date: "%-d" }}</div>
-  <div class="text">{{ content }}</div>
+  <div class="text">{{ page.title }}{% if page.cancelled %} CANCELLED{% endif %}</div>
 </div>

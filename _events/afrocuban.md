@@ -1,6 +1,5 @@
 ---
-date: 2017-04-05
-cancelled: true
+date: 2017-04-06
 type: event
+title: Afro-Cuban Date -Int/Adv w/Kati Hernandez
 ---
-Afro-Cuban Date -Int/Adv w/Kati Hernandez

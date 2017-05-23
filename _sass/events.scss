@@ -3,25 +3,35 @@
 ;
 
 .event {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   margin-right: .5rem;
+  padding-right:1.5rem;
   @extend .row;
+  &.cancelled{
+    .date{
+      background-color: $red;
+    }
+  }
 
   .date {
     @extend .col-2;
-    background-color: #f0f0f0;
+    background-color: $gray-dark;
+    color: $white;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, sans-serif;//check with Kegan
+    text-transform: uppercase;
   }
 
   .text {
     @extend .col-10;
-    background-color: #f2dede;
+    background-color: $gray-light;
+    padding: 35px;
   }
 
   div {
-      padding: 2rem;
+      padding: 1.5rem;
+      //padding-left:2rem;
   }
 
-  .cancelled{
-    background-color: $red;
-  }
 }
