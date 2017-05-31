@@ -17,6 +17,10 @@
   background-color: $gray-light;
 }
 
+body {
+  overflow: hidden;
+}
+
 section,
 .section {
   padding: $spacer 0;

@@ -6,26 +6,50 @@
   display: none;
 }
 
+#nav-trigger:checked ~ .site-nav {
+  opacity: 1;
+  transition: opacity 0s;
+}
+
+#nav-trigger:checked ~ #site,
+#nav-trigger:checked ~ #site > * {
+  left: 265px;
+  transition: left 0.1s;
+}
+
 .site-nav {
-  background-color: $gray-dark;
+  background-color: $gray-light;
   opacity: 0;
 
   overflow-y: auto;
-
   position: fixed;
   bottom: 0;
   top: 0;
   z-index: 0;
 
   width: 265px;
-}
 
-#nav-trigger:checked ~ .site-nav {
-  opacity: 1;
-  transition: opacity 0s;
-}
+  > header {
+    text-align: center;
+    padding: 1.5rem;
+  }
 
-#nav-trigger:checked ~ #site {
-  left: 265px;
-  transition: left 0.2s;
+  > ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+
+    > li {
+      border-top: solid 2px $gray-dark;
+
+      > a {
+        &:hover {
+          text-decoration: none;
+        }
+
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+    }
+  }
 }
