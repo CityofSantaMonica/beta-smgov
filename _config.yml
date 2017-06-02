@@ -13,4 +13,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - scripts
